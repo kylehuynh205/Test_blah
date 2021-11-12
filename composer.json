@@ -10,29 +10,22 @@
         "issues": "https://www.drupal.org/project/issues/test_composer_json",
         "source": "http://cgit.drupalcode.org/test_composer_json"
     },
-    "repositories": [
-        {
+    "repositories": {
+        "drupal": {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
-        },
-        {
-            "type": "package",
-            "package": {
-                "name": "digitalutsc/ajax-solr",
-                "version": "dev-master",
-                "type":"drupal-library",
-                "source": {
-                    "url": "https://github.com/digitalutsc/ajax-solr",
-                    "type": "git",
-                    "reference": "dev-master"
-                }
-            }
         }
-    ],
+    },
     "require": {
+        "react/child-process": "*",
+        "react/event-loop": "*",
+        "ext-posix": "*",
         "mtdowling/jmespath.php": "*",
-        "islandora/jsonld": "2.1.0",
-        "digitalutsc/ajax-solr": "2.1.0"
+        "islandora/jsonld": "*",
+        "drupal/advancedqueue": "*",
+        "drupal/restui": "*",
+        "drupal/file_entity": "*",
+        "drupal/field_permissions": "*"
     },
     "authors": [
         {
