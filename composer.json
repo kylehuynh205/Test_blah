@@ -22,7 +22,7 @@
         {
             "type": "package",
             "package": {
-                "name": "contrib/jsonld",
+                "name": "islandora/jsonld",
                 "version": "2.x",
                 "type":"drupal-module",
                 "source": {
