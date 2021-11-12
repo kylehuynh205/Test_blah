@@ -18,36 +18,21 @@
         {
             "type": "package",
             "package": {
-                "name": "islandora/jsonld",
-                "version": "2.x",
-                "type":"drupal-module",
+                "name": "digitalutsc/ajax-solr",
+                "version": "dev-master",
+                "type":"drupal-library",
                 "source": {
-                    "url": "https://github.com/Islandora/jsonld.git",
+                    "url": "https://github.com/digitalutsc/ajax-solr",
                     "type": "git",
-                    "reference": "2.x"
+                    "reference": "dev-master"
                 }
             }
         }
     ],
-    "extra": {
-        "installer-paths": {
-            "web/core": ["type:drupal-core"],
-            "web/libraries/{$name}": ["type:drupal-library"],
-            "web/modules/contrib/{$name}": ["type:drupal-module"],
-            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
-            "web/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "web/themes/contrib/{$name}": ["type:drupal-theme"]
-        }
-    },
     "require": {
         "mtdowling/jmespath.php": "*",
-        "islandora/jsonld": "2.x"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^8",
-        "squizlabs/php_codesniffer": "^3",
-        "drupal/coder": "*",
-        "sebastian/phpcpd": "*"
+        "islandora/jsonld": "2.1.0",
+        "digitalutsc/ajax-solr": "2.1.0"
     },
     "authors": [
         {
@@ -55,17 +40,5 @@
             "email": "kyle.huynh205@gmail.com",
             "role": "Maintainer"
         }
-    ],
-    "scripts": {
-        "post-install-cmd": [
-            "./vendor/bin/phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniffer"
-        ],
-        "post-update-cmd": [
-            "./vendor/bin/phpcs --config-set installed_paths ~/.composer/vendor/drupal/coder/coder_sniffer"
-        ],
-        "check": [
-            "./vendor/bin/phpcs --standard=Drupal --ignore=*.md,vendor --extensions=php,module,inc,install,test,profile,theme,css,info .",
-            "./vendor/bin/phpcpd --names='*.module,*.inc,*.test,*.php' --exclude=vendor ."
-        ]
-    }
+    ]
 }
