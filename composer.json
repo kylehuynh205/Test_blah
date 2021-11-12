@@ -16,10 +16,6 @@
             "url": "https://packages.drupal.org/8"
         },
         {
-            "type": "github",
-            "url":  "https://github.com/Islandora/jsonld.git"
-        },
-        {
             "type": "package",
             "package": {
                 "name": "islandora/jsonld",
@@ -34,7 +30,8 @@
         }
     ],
     "require": {
-        "mtdowling/jmespath.php": "*"
+        "mtdowling/jmespath.php": "*",
+        "islandora/jsonld": "2.x"
     },
     "extra": {
         "installer-paths": {
