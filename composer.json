@@ -16,10 +16,14 @@
             "url": "https://packages.drupal.org/8"
         },
         {
+            "type": "github",
+            "url":  "https://github.com/Islandora/jsonld.git"
+        },
+        {
             "type": "package",
             "package": {
                 "name": "contrib/jsonld",
-                "version": "dev-2.x",
+                "version": "2.x",
                 "type":"drupal-module",
                 "source": {
                     "url": "https://github.com/Islandora/jsonld.git",
@@ -37,6 +41,7 @@
             "web/core": ["type:drupal-core"],
             "web/libraries/{$name}": ["type:drupal-library"],
             "web/modules/contrib/{$name}": ["type:drupal-module"],
+            "web/modules/custom/{$name}": ["type:drupal-custom-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"]
         }
